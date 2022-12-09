@@ -1,0 +1,55 @@
+.container {
+	width: 80%;
+	margin: auto;
+}
+
+.footer {
+	background-color: #c61313;
+	padding: 1.87rem 0;
+	&__content {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+		line-height: 1.5;
+		color: #efb810;
+	}
+	&__title {
+		font-size: 1.87rem;
+	}
+	&__list {
+		display: flex;
+		gap: 3.12rem;
+		font-size: 1.25rem;
+		list-style: none;
+	}
+	&__link {
+		text-decoration: none;
+		color: #efb810;
+		font-weight: 500;
+	}
+	&__text {
+		font-size: 1.25rem;
+	}
+	&__socials {
+		margin-top: 0.93rem;
+		display: flex;
+		gap: 1.87rem;
+		ion-icon {
+			font-size: 1.25rem;
+			cursor: pointer;
+		}
+	}
+}
+
+@media screen and (max-width: 400px) {
+  .container {
+    width: 90%;
+    margin: auto;
+  }
+	.footer {
+		&__text {
+			text-align: justify;
+		}
+	}
+}
